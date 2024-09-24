@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuários</h1>
+        <form action="#" method="POST" id="user-form">
+            <div class="form-group">
+                <label for="nome-completo">Nome completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite seu nome completo" required>
+            </div>
 
+            <div class="form-group">
+                <label for="email">Endereço de email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="perfil">Perfil:</label>
+                <select id="perfil" name="perfil" required>
+                    <option value="Professor">Professor</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Jogador">Jogador</option>
+                </select>
+            </div>
+
+            <button type="submit">Confirmar Cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
